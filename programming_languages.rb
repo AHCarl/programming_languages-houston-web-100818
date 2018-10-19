@@ -6,7 +6,7 @@ def reformat_languages(languages)
     new_hash[paradigm] = lang 
     lang.each do |type, val|
       new_hash[lang] = type 
-      
+      binding.pry
       new_hash[lang][type].values = val
     end 
   end 
